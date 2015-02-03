@@ -43,6 +43,7 @@ game.createClass('TileMap', {
             var tilesInCol = Math.floor(tileset.imageheight / tileset.tileheight);
             var tileCount = tilesInRow * tilesInCol;
 
+            var tileIndex = 0;
             for (var index = 0; index < tileCount; index++) {
                 var currentRow = Math.floor(index / tilesInRow);
                 var currentCol = Math.floor(index % tilesInRow);
@@ -57,7 +58,7 @@ game.createClass('TileMap', {
 
                 var texture = new game.Texture(game.TextureCache[path], new game.PIXI.Rectangle(x, y, tileset.tilewidth, tileset.tileheight));
 
-                this.tiles[index] = texture;
+                this.tiles[tileIndex++] = texture;
             }
         }
     },
@@ -144,7 +145,7 @@ game.createClass('TileMap', {
     **/
     getLayerMatrix: function (layerName) {
         var layer = this.getLayer(layerName);
-        var colCount  = layer.width;
+        var colCount = layer.width;
         var rowCount = Math.ceil(layer.data.length / colCount);
         var matrix = [];
         var i = 0;
@@ -181,7 +182,7 @@ game.createClass('TileMap', {
     getLayer: function (layerName) {
         for (var i = 0; i < this.json.layers.length; i++) {
             var layer = this.json.layers[i];
-            if (layer.name === layerName) return layer;                
+            if (layer.name === layerName) return layer;
         }
         return false;
     },

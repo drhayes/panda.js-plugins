@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="40" height="40" tilewidth="32" tileheight="32">
  <tileset firstgid="1" source="desert.tsx"/>
+ <tileset firstgid="49" name="Dark Desert" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="tmw_dark_desert_spacing.png" width="265" height="199"/>
+ </tileset>
  <layer name="Ground" width="40" height="40">
   <data encoding="base64" compression="zlib">
-   eJztmNkKwjAQRaN9cAPrAq5Yq3Xf6v9/nSM2VIbQJjEZR+nDwQZScrwztoORECLySBcIgZ7nc2y4KfyWDLx+Jb9nViNgDEwY+KioAXUgQN4+zpoCMwPmQAtoAx2CLFbA2oDEo9+hwG8DnIDtF/2K8ks086Tw2zH0uyMv7HcRr/6/EvvhnsPrsrxwX7rwU/0ODig/eV3mh3N1ld8eraWPaX6+64s9McesfrqcHfg1MpoifxcVEWjukyw+9AtFPl/I71pER3Of6j4bv7HI54s+MChhqLlPdZ/P3qMmFuo5h5NnTOhjM5tReN2yT51n5/v7J3F0vi46fk+ne7aX0i9l6If7mpufTX3f5wsqv9TAD2fJLT9VrTn7UeZnM5tR+v0LMQOHXwFnxe2/warGFRWf8QDjOLfP
+   eJztmNtOAjEQhqtcqJCIh0Q8RFxdD4gK6J3e6QP4/o/jEHezzZ9JO627k8HsxRcgmU0//inthKlzbtoh+8SYOOh4nRwWjN+VAa9NyW+d1QkxIU4N+HBsEdvEALy7WOuMOE/ggtgjhsRIuMY3kOJ3TdwkUCb6oVvIbxbwuyXmxF2Lfpxbbn6lME+pn+/zSrx5xJzulf3eiQ8Prn4FXuj37H73/4uyH+45/BzLC/dlG37c72AG+dXvY36Ya1v5PUB97ZOaX9f9RU/kseqflKcMv0/iy2OnYtc1d1GIgbCu5lLgFzr/xq6ZL+rvGmIkrOOek5yx6DdxzXxxSBxFOBbWcc+l3AVIbO9pUzh+zrHkWSj65MxmGl6L6lVydvr3T9nS+lIkfmunVVWr6bc06If72ppfTn/9+ULLb5ngh1lay4/rtWU/zfxyZjNNv/9CYcBhU8CsrP032Pe4p+dv/AChWMN4
   </data>
  </layer>
 </map>
